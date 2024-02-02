@@ -10,4 +10,10 @@ res.json(result)
 
 })
 
+
+
+FormRouter.get("/show", async (req, res) => {
+    let result = await FormModel.findOne({})
+    res.json(result)
+})
 export default FormRouter;
